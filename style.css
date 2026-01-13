@@ -1,0 +1,22 @@
+#title {
+    text-align: center;
+    font-family:'Courier New';
+    color:rgb(88, 88, 67);
+    height: 100;
+    background-color:rgb(255, 218, 218);
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: block;
+    }
+#about-me {
+    margin-top: 20px;
+    display: block;
+    background-color:rgb(255, 218, 218);
+    padding: 20px;    
+    font-family:'Courier New';
+    margin-right: 50%;    
+    }
+
+
+body {background-color:rgb(161, 150, 91)}
