@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Exercise</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color:rgb(161, 197, 174);
+            margin: 0;
+        }
+        div {
+            width: 100%;
+            height: 100%;
+        }
+        #container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            column-gap: 10px;
+            padding: 10px;
+            height: 100vh;
+        }
+
+        #red {
+            display: flex;
+            flex-direction: row;
+            row-gap: 10px;
+            column-gap: 10px;
+            height: 20%;
+        }
+        #red div {
+            padding: 20px;
+            background-color: rgb(196, 115, 109);
+        }
+
+        #bottom {
+            display: flex;
+            gap: 10px;
+            height: 80%;
+        }
+        #square {
+            background-color:rgb(92, 122, 89);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+        #square div {
+            background-color:yellow;
+            padding:20px;
+            width: 30%;
+            height: 20%;
+        }
+        
+        #grass {
+            display: flex;
+            row-gap: 10px;
+            column-gap: 10px;
+            flex-direction: column;
+        }
+        #grass div {
+            background-color:rgb(129, 160, 89);
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <div id="red">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="bottom">
+           <div id="square">
+                <div></div>
+            </div>
+            <div id="grass">
+               <div></div>
+               <div></div>
+                <div></div>
+               <div></div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
