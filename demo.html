@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exercise - Grid Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {background-color:white}
+        
+        #grid-example-one div {
+            padding: 20px;
+            background-color: grey
+        }
+
+        #grid-example-one{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 2px
+        }
+
+        #grid-example-two{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            gap: 2px;
+        }
+
+        #grid-example-two div {
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        #header {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 6
+        }
+
+        #sidebar {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        #content-one {
+            grid-row: 2 / 3;
+            grid-column: 2 / 6;
+        }
+
+        #content-two {
+            grid-row: 3 / 4;
+            grid-column: 2 / 4;
+        }
+        #content-three {
+            grid-row: 3 / 4;
+            grid-column: span 2
+        }
+        #footer {
+            grid-column: span 6
+        }
+    </style>
+</head>
+<body>
+    <div id="grid-example-one">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div id="grid-example-two">
+        <div id="header">header</div>
+        <div id="sidebar">sidebar</div>
+        <div id="content-one">content one</div>
+        <div id="content-two">content two</div>
+        <div id="content-three">content three</div>
+        <div id="footer">footer</div>
+    </div>
+</body>
+</html>
