@@ -72,11 +72,14 @@
             width: 150px;
             background-color: #86324A;
             border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            border: 5px solid #86324A;
         }
-        #celebphoto div {
-            object-fit: fill;
-            max-width: 100%;
-            height: auto;
+        #celebphoto img {
+            max-height: 100%;
+            width: auto;
         }
         #celebphoto:hover{
             background-image: linear-gradient(to top, #FF6542, transparent);
