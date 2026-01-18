@@ -1,1 +1,26 @@
+* {
+            box-sizing: border-box;
+        }
+        body {
+            margin:0;
+        }
 
+        #topbar {
+            text-align: center;
+            background-color: #023047;
+            color: #FDFFFC;
+            padding: 5px;
+        }
+        #footer {
+            text-align: center;
+            background-color:#023047;
+            color: #FDFFFC;
+            padding:15px;
+        }
+        body {
+            background-color: #BBCBCB
+        }
+        #line {
+            height: 5px;
+            background-color: #86324A;
+        }

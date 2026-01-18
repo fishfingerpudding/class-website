@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story  |  Shark Incorporated</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #about-us {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        #header {
+            padding: 200px;
+            margin-top: 0px;
+            background-color: #FDFFFC;
+        }
+        #subheader{
+            
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            background-color: #FDFFFC;
+            
+        }
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+        }
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -17px;
+            background-color: #FDFFFC;
+            border: 4px solid #FF6542;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .left::before {
+            content: "";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid yellow;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent #FDFFFC;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .right::before {
+            content: "";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid yellow;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent #FDFFFC transparent transparent;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .right::after {
+            left: -16px;
+        }
+        .content {
+            padding: 20px 30px;
+            background-color: #FDFFFC;
+            position: relative;
+            border-radius: 6px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+
+        #about-container {
+           display: flex;
+           flex-direction: column;
+           background-color: #FDFFFC;
+           
+        }
+        #about-container div {
+            margin-left: 20px;
+        }
+        #grid-about {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 70px;
+            margin-bottom: 70px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        #grid-about div{    
+           padding: 10px;
+        }
+        #text-one {
+            text-align: center;
+            margin-top: 60px;
+            background-color: #FDFFFC;
+            margin-left: 150px;
+            margin-right: 150px;
+            padding:20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="topbar">
+        <h1>Sharks Incorprated</h1>
+    </div>
+    <div id="line"></div>
+    <div id="about-us">
+        <div id="header">
+            <h2>Our Story</h2>
+            <div id="line"></div>
+            <div id="subheader">
+                <p>At Sharks Inc., we are more than just a wholesale seafood distributor. We are a globally connected, industry-leading conglomerate with over five hundred million years in the business. Recognized internationally for expertise in seafood sourcing, processing, logistics, and wholesale distribution, Sharks Inc. is unparallelled. </p>
+                <p>Despite recent downsizes and quality control issues, Sharks Inc. is committed to providing the highest-quality fish for every client.</p>
+                <a>Learn More</a>
+            <div id="line"></div>
+            </div>
+        </div>
+        <div style="background-color:grey">
+        </div>
+    </div>
+    <div id="grid-about">
+        <div style="background-color:grey">
+        </div>
+        <div id="about-container">
+            <div>
+                <h2>Why Sharks Inc.?</h2>
+            </div>
+            <div>
+                <h3>Variety</h3>
+                <p>Whether you’re looking for the largest fish in the sea, or the smallest phytoplankton, Sharks Inc. has you covered. We work with over five hundred wholesale partners and contributors to source the best fish for every occasion.</p>
+            </div>
+            <div>
+                <h3>Quality</h3>
+                <p>We provide the highest quality seafood to meet the needs of every client, upholding the strictest food safety standards. To maintain full compliance with all worthwhile regulations, every product is certified before processing and packaging. We use a combination of advanced vacuum-sealing, blast-freezing, and eco-friendly packaging solutions to maintain product integrity and improve shelf life without compromising on the fresh fishiness our customer base knows and loves.</p>
+            </div>
+            <div>
+                <h3>Our History</h3>
+                <p>At Sharks Inc., we take pride in being the best in the business. What works <i>works</i>, and we’ve been working for four hundred and fifty million years. Why seek a newer, poorly established competitor when Sharks Inc. has always had your back?</p>
+            </div>
+        </div>
+    </div>
+    <div id="text-one">
+        <h2>Timeline</h2>
+        <div id="line"></div>
+        <p>Far from our current international standing, Sharks Inc. was founded as a small family business roughly five hundred million years ago. We have grown steadily since our inception, expanding to thirteen branches and including over five hundred wholesale partners.</p>
+    </div>
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                <h2>439,000,000 BC</h2>
+                <p>Start of the family business with acanthodian partners</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                <h2>201,000,000 BC</h2>
+                <p>Introduction of new partners and consequent product expansion</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                <h2>45,000,000 BC</h2>
+                <p>Formation of Solaris</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                <h2>4,000,000 BC</h2>
+                <p>Evolution of humanity</p>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                <h2>1933 BCE</h2>
+                <p>Sliced bread</p>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                <h2>1970</h2>
+                <p>Start of substantial downsizing due to loss of wholesale partners</p>
+                </div>
+            </div>
+        </div>
+
+    <div id="line"></div>
+    <div id="footer">
+        <a href="shark2.html">Meet the Team</a>
+    </div>
+</body>
+</html>
