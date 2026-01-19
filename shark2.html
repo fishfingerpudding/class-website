@@ -64,12 +64,13 @@
         }
         #celebs {
             display: flex;
-            align-items: column;
+            flex-wrap: wrap;
             column-gap: 20px;
             row-gap: 50px;
             margin-top: 20px;
             margin-bottom: 20px;
             background-color: #FDFFFC;
+            justify-content: space-evenly;
         }
 
         #celebphoto {
@@ -81,6 +82,9 @@
             display: flex;
             justify-content: center;
             border: 5px solid #86324A;
+        }
+        .profile-two {
+            width: 160px;
         }
         #celebphoto img {
             max-height: 100%;
@@ -201,7 +205,7 @@
             <p>Over the years, many professional actors and celebrities have sponsored Sharks Inc. and subsidiaries.</p>
         </div>
         <div id="celebs">
-        <div id="profile">
+        <div id="profile" class="profile-two">
             <div id="celebphoto">
                 <img src="Jaws.png">
             </div>
@@ -209,7 +213,7 @@
                 <h4>Shark</h4></div>
                 Cameoed in <a href="https://en.wikipedia.org/wiki/Jaws_(film)"><i>Jaws</i></a>
         </div>
-        <div id="profile">
+        <div id="profile" class="profile-two">
             <div id="celebphoto">
                 <img src="blahaj.webp">
             </div>
@@ -217,7 +221,7 @@
                 <h4>Blåhaj</h4></div>
                 Manufactured by <a href="https://en.wikipedia.org/wiki/Blåhaj">Ikea</a>
         </div>
-        <div id="profile">
+        <div id="profile" class="profile-two">
             <div id="celebphoto">
                 <img src="sharknado.png">
             </div>
@@ -226,7 +230,7 @@
             Seen in <a href="https://en.wikipedia.org/wiki/Sharknado"><i>Sharknado</i></a>
         </div>
 
-        <div id="profile">
+        <div id="profile" class="profile-two">
             <div id="celebphoto">
                 <img src="nemo.jpg">
             </div>
@@ -234,7 +238,7 @@
                 <h4>Anchor, Bruce, and Chum</h4></div>
                 Starred in <a href="https://en.wikipedia.org/wiki/Finding_Nemo"><i>Finding Nemo</i>.</a>
         </div>
-        <div id="profile">
+        <div id="profile" class="profile-two">
             <div id="celebphoto">
                 <img src="maccus.png">
             </div>
@@ -242,7 +246,7 @@
                 <h4>Maccus</h4></div>
                 Starred in <a href="https://en.wikipedia.org/wiki/Pirates_of_the_Caribbean%3A_Dead_Man's_Chest"><i>Pirates of the Caribbean: Dead Man's Chest</i></a> and <a href="https://en.wikipedia.org/wiki/Pirates_of_the_Caribbean:_At_World%27s_End"><i>Pirates of the Caribbean: At World's End</i></a>
         </div>
-        <div id="profile">
+        <div id="profile" class="profile-two">
             <div id="celebphoto">
                 <img src="babyshark.png">
             </div>
