@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Grail  |  Exercise 4</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #222221;
+            color: rgb(196, 185, 166);
+            margin: 20px;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            gap: 20px;
+
+        }
+        #container div {
+            border: 1px solid rgb(196, 185, 166);
+        }
+        #header {
+            grid-row: 1 / 2;
+            grid-column: 1 / 8;
+            text-align: center;
+            font-size: xx-large;
+            background-color: rgb(42, 41, 40);
+        }
+        #column-left {
+            grid-row: 2 / 7;
+            grid-column: 1 / 2;
+            background-color: #2a2928;
+        }
+        #column-right {
+            grid-row: 2 / 7;
+            grid-column: 7 / 8;
+            background-color: #2a2928;
+        }
+        #container-two {
+            grid-row: 2 / 7;
+            grid-column: 2 / 7;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background-color: rgb(42, 41, 40);
+        }
+        #container-two div {
+            margin: 20px;
+            height: 330px;
+        }
+        #footer-one {
+            grid-row: 7 / 8;
+            grid-column: 1 / 8;
+            text-align: center;
+            vertical-align: middle;
+            background-color: rgb(42, 41, 40);
+        }
+        .none:hover {
+            background-color: rgb(71, 67, 63);
+        }
+        .none-one:hover {
+            background-color: rgb(143, 143, 8);
+
+        }
+        .one img{
+            max-height: 1fr;
+            max-width: 100%;
+            overflow: hidden;
+            justify-content: center;
+            opacity: 0%;
+            align-items: flex-end;
+        }
+        .one:hover{
+            background-color: rgb(143, 143, 8);
+        }
+        .one img:hover {
+            opacity: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div  id="header">
+            <p><i>find</i></p>
+            <h1>the Grackle Man</h1>
+        </div>
+        <div id="container-two">
+            <div class="none"></div>
+            <div class="none"></div>
+            <div class="none-one"></div>
+            <div class="none"></div>
+            <div class="none"></div>
+
+            <div class="none"></div>
+            <div class="none"></div>
+            <div class="none"></div>
+            <div class="none-one"></div>
+            <div class="none"></div>
+            
+            <div class="none"></div>
+            <div class="none"></div>
+            <div class="none"></div>
+            <div class="none"></div>
+
+            <div class="none-one"></div>
+            <div class="one">
+                <img src="grackleman.png">
+            </div>
+            <div class="none-one"></div>
+            <div class="none"></div>
+            <div class="none"></div>
+            <div class="none"></div>
+            <div class="none"></div>
+            <div class="none"></div>
+            <div class="none-one"></div>
+            <div class="none"></div>
+
+        </div>
+        <div id="column-left">
+            <div class="ad">Ad 1</div>
+            <div class="ad">Ad 2</div>
+            <div class="ad">Ad 3</div>
+        </div>
+        <div id="column-right">
+            <div class="ad">Ad 4</div>
+            <div class="ad">Ad 5</div>
+            <div class="ad">Ad 6</div>
+        </div>
+        <div id="footer-one">
+            <p>did you find him?</p>
+        </div>
+    </div>
+</body>
+</html>
