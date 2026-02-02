@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomize Java</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #a9ecdb;
+        }
+        #forg img {
+            width:150px;
+        }
+        #forg {
+            padding:none;
+            display: flex;
+            flex-wrap: wrap;
+            width:fit-content
+        }
+        #forg2 {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    #forg2 img {
+        width: 150px;
+        display: block;
+        background-color: transparent;
+    }
+    </style>
+</head>
+<body>
+    <h1>without chatgpt</h1>
+    <div id="forg" onclick="pickAColor()">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+        <img src="cantheforgsing.png">
+</div>
+    <button onclick="pickAColor()">The Frog Chorus Hungers</button>
+
+    <script>
+        let colors = ["red", "orange", "yellow", "green", "blue", "purple", "white", "gray", "black"];
+            function pickAColor(){
+                let randomColor = colors[Math.floor(Math.random() * colors.length)]
+                document.getElementById("forg").style.backgroundColor = randomColor;
+            }
+    </script>
+
+    <h1>with chatgpt</h1>
+    <p>used to try to fix the color overflow; which I found to be entirely unsuccessful.</p>
+
+
+<div id="forg2" onclick="pickAColor()"> 
+    <img src="cantheforgsing.png">
+    <img src="cantheforgsing.png">
+    <img src="cantheforgsing.png">
+    <img src="cantheforgsing.png">
+    <img src="cantheforgsing.png">
+    <img src="cantheforgsing.png">
+    <!-- (the rest of your frogs remain powerful) -->
+</div>
+
+<button onclick="pickAColor()">The Frog Chorus Hungers</button>
+
+<script>
+    let colors = ["red", "orange", "yellow", "green", "blue", "purple", "white", "gray", "black"];
+
+    function pickAColor() {
+        let randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+        document.querySelectorAll("#forg2 img").forEach(img => {
+            img.style.backgroundColor = randomColor;
+        });
+    }
+</script>
+</script>
+</body>
+</html>
